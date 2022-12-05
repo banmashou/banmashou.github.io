@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript 的数据类型都有什么 | 斑马兽</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="斑马兽">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f93fd0e.css" as="style"><link rel="preload" href="/assets/js/app.ca482ce6.js" as="script"><link rel="preload" href="/assets/js/4.e4d66431.js" as="script"><link rel="preload" href="/assets/js/30.3d9e4bd8.js" as="script"><link rel="prefetch" href="/assets/js/10.b8426513.js"><link rel="prefetch" href="/assets/js/11.63ff5362.js"><link rel="prefetch" href="/assets/js/12.c2d1527e.js"><link rel="prefetch" href="/assets/js/13.a20f78cb.js"><link rel="prefetch" href="/assets/js/14.90f22846.js"><link rel="prefetch" href="/assets/js/15.72f816e6.js"><link rel="prefetch" href="/assets/js/16.6ee469f1.js"><link rel="prefetch" href="/assets/js/17.82d1967d.js"><link rel="prefetch" href="/assets/js/18.9ab77a24.js"><link rel="prefetch" href="/assets/js/19.55c25ae5.js"><link rel="prefetch" href="/assets/js/2.45e53b8b.js"><link rel="prefetch" href="/assets/js/20.7b871faf.js"><link rel="prefetch" href="/assets/js/21.0566bcc7.js"><link rel="prefetch" href="/assets/js/22.543e912c.js"><link rel="prefetch" href="/assets/js/23.5f6c721d.js"><link rel="prefetch" href="/assets/js/24.2000941f.js"><link rel="prefetch" href="/assets/js/25.8405abc2.js"><link rel="prefetch" href="/assets/js/26.d2e7d884.js"><link rel="prefetch" href="/assets/js/27.f615a8f0.js"><link rel="prefetch" href="/assets/js/28.8e00aede.js"><link rel="prefetch" href="/assets/js/29.e3c15d88.js"><link rel="prefetch" href="/assets/js/3.b1fe84e4.js"><link rel="prefetch" href="/assets/js/31.f6ee0328.js"><link rel="prefetch" href="/assets/js/32.2d4c8c59.js"><link rel="prefetch" href="/assets/js/33.9172582e.js"><link rel="prefetch" href="/assets/js/34.927b98da.js"><link rel="prefetch" href="/assets/js/35.81aff24e.js"><link rel="prefetch" href="/assets/js/36.807a0999.js"><link rel="prefetch" href="/assets/js/37.935ba9e8.js"><link rel="prefetch" href="/assets/js/38.19964381.js"><link rel="prefetch" href="/assets/js/5.c73eadd7.js"><link rel="prefetch" href="/assets/js/6.366812d0.js"><link rel="prefetch" href="/assets/js/7.a3e66da6.js"><link rel="prefetch" href="/assets/js/8.2a068be5.js"><link rel="prefetch" href="/assets/js/9.eef1310c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f93fd0e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">斑马兽</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习资料" class="dropdown-title"><span class="title">学习资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习资料" class="mobile-dropdown-title"><span class="title">学习资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/curriculum/html/basics/basics.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/guide/curriculum/css/basics/basics.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/vue/vue.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/guide/vuex/vuex.html" class="nav-link">
+  VUEX
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具软件" class="dropdown-title"><span class="title">工具软件</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具软件" class="mobile-dropdown-title"><span class="title">工具软件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/tool/vscode/basic.html" class="nav-link">
+  VSCODE
+</a></li></ul></div></div><div class="nav-item"><a href="/guide/bug/bug.html" class="nav-link">
+  项目经验
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试" class="dropdown-title"><span class="title">前端面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端面试" class="mobile-dropdown-title"><span class="title">前端面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/interview/html/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/css/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/js/js.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/vue/vue.html" class="nav-link">
+  VUE
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习资料" class="dropdown-title"><span class="title">学习资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习资料" class="mobile-dropdown-title"><span class="title">学习资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/curriculum/html/basics/basics.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/guide/curriculum/css/basics/basics.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/vue/vue.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/guide/vuex/vuex.html" class="nav-link">
+  VUEX
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具软件" class="dropdown-title"><span class="title">工具软件</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具软件" class="mobile-dropdown-title"><span class="title">工具软件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/tool/vscode/basic.html" class="nav-link">
+  VSCODE
+</a></li></ul></div></div><div class="nav-item"><a href="/guide/bug/bug.html" class="nav-link">
+  项目经验
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试" class="dropdown-title"><span class="title">前端面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端面试" class="mobile-dropdown-title"><span class="title">前端面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/interview/html/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/css/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/js/js.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/vue/vue.html" class="nav-link">
+  VUE
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/interview/js/js.html" aria-current="page" class="active sidebar-link">js</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#javascript-的数据类型都有什么" class="sidebar-link">JavaScript 的数据类型都有什么</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#js中-null-和-undefined-的区别" class="sidebar-link">JS中 null 和 undefined 的区别</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#闭包" class="sidebar-link">闭包</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#事件委托是什么" class="sidebar-link">事件委托是什么</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#什么是事件冒泡" class="sidebar-link">什么是事件冒泡</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#javascript本地存储的方式有哪些" class="sidebar-link">Javascript本地存储的方式有哪些</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#let、const和var的区别" class="sidebar-link">let、const和var的区别</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#普通函数与构造函数的区别" class="sidebar-link">普通函数与构造函数的区别</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#js中什么是原型和原型链" class="sidebar-link">JS中什么是原型和原型链</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#防抖和节流" class="sidebar-link">防抖和节流</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#字符串、数组-有哪些方法" class="sidebar-link">字符串、数组 有哪些方法</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#什么是深拷贝、浅拷贝" class="sidebar-link">什么是深拷贝、浅拷贝</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#es6新增哪些特性" class="sidebar-link">es6新增哪些特性</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#箭头函数和普通函数区别" class="sidebar-link">箭头函数和普通函数区别</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#什么是promise" class="sidebar-link">什么是Promise</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#http状态码" class="sidebar-link">HTTP状态码</a></li><li class="sidebar-sub-header"><a href="/guide/interview/js/js.html#new操作符" class="sidebar-link">new操作符</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="javascript-的数据类型都有什么"><a href="#javascript-的数据类型都有什么" class="header-anchor">#</a> JavaScript 的数据类型都有什么</h2> <p>基本数据类型：String,Boolean,number,undefined,object,Null<br>
+引用数据类型：Object(Array,Date,RegExp,Function)</p> <h2 id="js中-null-和-undefined-的区别"><a href="#js中-null-和-undefined-的区别" class="header-anchor">#</a> JS中 null 和 undefined 的区别</h2> <p>相同点：隐式类型转换都是false<br>
+不同点：number(null) 是0，number(undefined)是NaN
+null表示值被定义了，但是空值 undefined表示未被定义</p> <h2 id="闭包"><a href="#闭包" class="header-anchor">#</a> 闭包</h2> <p>闭包说的通俗一点就是打通了一条在函数外部访问函数内部作用域的通道。正常情况下函数外部是访问不到函数内部作用域变量的，
+判断是不是闭包:函数嵌套函数,内部函数被return  内部函数调用外层函数的局部变量</p> <ul><li>优点：可以隔离作用域，不造成全局污染</li> <li>缺点：由于闭包长期驻留内存，则长期这样会导致内存泄露</li> <li>如何解决内存泄露：将暴露全外部的闭包变量置为null、不用闭包</li></ul> <h2 id="事件委托是什么"><a href="#事件委托是什么" class="header-anchor">#</a> 事件委托是什么</h2> <p>事件委托就是利用事件冒泡，只定制一个事件处理程序，就可以管理某一类型的所有事件。<br>
+事件委托，称为事件代理，是JS中很常用的绑定事件的方法。事件委托就是把原本需要绑定在子元素上面的事件委托给父元素，让父元素担当事件监听的职务，原理是DOM元素的事件冒泡。</p> <h2 id="什么是事件冒泡"><a href="#什么是事件冒泡" class="header-anchor">#</a> 什么是事件冒泡</h2> <p>一个事件触发后，会在子元素和父元素之间传播，这种传播分为三个阶段：<br>
+捕获阶段（从 window 对象传导到目标节点（从外到里），这个阶段不会响应任何事件）<br>
+目标阶段（在目标节点上触发）<br>
+冒泡阶段（从目标节点传导回window对象，从里到外。） 事件委托/事件代理就是利用事件冒泡的机制把里层需要响应的事件绑定到外层</p> <h2 id="javascript本地存储的方式有哪些"><a href="#javascript本地存储的方式有哪些" class="header-anchor">#</a> Javascript本地存储的方式有哪些</h2> <p><strong>相同点：</strong>
+都是在浏览器（客户端）内存储，存储方式为字符串<br> <strong>不同点：</strong>
+生命周期：<br></p> <ul><li>cookie如果不设置有效期，就是临时存储（存储在内存中），如果设置了有效期，到期之后会消失（存储在硬盘里）<br></li> <li>localStorage是永久存储，关闭浏览器数据也不会消失，除非手动删除<br></li> <li>sessionStorage是临时存储，仅在当前回话下有效。引入了一个窗口的概念，数据仅在当前窗口下生效，关闭当前窗口的话数据会被删除<br></li> <li>cookie数据在每次网络请求的时候都会被发送给服务端，localStorage和sessionStorage则不会<br></li> <li>cookie大小限制为4kb，storage则为5M<br></li> <li>storage比cookie的安全性更高一些</li></ul> <h2 id="let、const和var的区别"><a href="#let、const和var的区别" class="header-anchor">#</a> let、const和var的区别</h2> <ul><li>var声明的变量会挂载在window上，而let和const则不会</li> <li>var声明的变量存在变量提升，而let和const则不会</li> <li>同一个作用域下var可以声明同名变量，而let和const则不行</li> <li>let和const会生成块级作用域</li> <li>const一旦声明之后不可修改，如果是复杂数据类型的话，可以修改其属性</li></ul> <h2 id="普通函数与构造函数的区别"><a href="#普通函数与构造函数的区别" class="header-anchor">#</a> 普通函数与构造函数的区别</h2> <div class="language- extra-class"><pre class="language-text"><code>1. 构造函数也是一个普通函数，创建方式和普通函数一致，但是构造函数习惯性首字母大写
+2. 调用方式不一样，普通函数直接调用，构造函数要用new去实例化
+3. 调用时，构造函数内部会创建一个新对象，普通函数不会创建新对象
+4. 构造函数内部的this指向实例，普通函数内部的this指向调用函数的对象，如果没有调用对象，则默认为window
+5. 构造函数默认的返回值是创建的对象，普通函数的返回值由内部的return决定
+6. 构造函数的函数名与类名相同
+</code></pre></div><h2 id="js中什么是原型和原型链"><a href="#js中什么是原型和原型链" class="header-anchor">#</a> JS中什么是原型和原型链</h2> <p><strong>原型关系：</strong><br>
+每个 class 都有显示原型 prototype<br>
+每个实例都有隐式原型 _ proto_<br>
+实例的_ proto_指向对应 class 的 prototype</p> <p><strong>原型：</strong><br>
+在 JS 中，每当定义一个对象（函数也是对象）时，对象中都会包含一
+些预定义的属性。其中每个函数对象都有一个 prototype 属性，这个属性指向函
+数的原型对象。</p> <p><strong>原型链：</strong><br>
+函数的原型链对象 constructor 默认指向函数本身，原型对象除了有原
+型属性外，为了实现继承，还有一个原型链指针__proto__,该指针是指向上一层
+的原型对象，而上一层的原型对象的结构依然类似。因此可以利用__proto__一
+直指向 Object 的原型对象上，而 Object 原型对象用 Object.prototype.__ proto__ = null 表示原型链顶端。如此形成了 js 的原型链继承</p> <h2 id="防抖和节流"><a href="#防抖和节流" class="header-anchor">#</a> 防抖和节流</h2> <p><strong>函数防抖：</strong><br>
+当持续触发事件时，一定时间段内没有再触发事件，事件处理函数才会执行一次，如果设定时间到来之前，又触发了事件，就重新开始延时。也就是说当一个用户一直触发这个函数，且每次触发函数的间隔小于既定时间，那么防抖的情况下只会执行一次。</p> <p><strong>函数节流：</strong><br>
+当持续触发事件时，保证在一定时间内只调用一次事件处理函数，意思就是说，假设一个用户一直触发这个函数，且每次触发小于既定值，函数节流会每隔这个时间调用一次
+用一句话总结防抖和节流的区别：防抖是将多次执行变为最后一次执行，节流是将多次执行变为每隔一段时间执行</p> <h2 id="字符串、数组-有哪些方法"><a href="#字符串、数组-有哪些方法" class="header-anchor">#</a> 字符串、数组 有哪些方法</h2> <p><strong>数组方法：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>1. eshift 删除数组中的第一个元素
+2. pop 删除数组中的最后一个元素
+3. unshift 增加元素在数组的前面
+4. push 增加元素在数组的后面
+5. map 循环，并且返回新的数组
+6. forEach 循环，遍历
+7. filter 过滤，筛选出数组中的满足条件的，并且返回新的数组
+8. concat 合并数组
+</code></pre></div><p><strong>字符串方法：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>1. slice() 提取字符串的片段，并在新的字符串中返回被提取的部分
+2. split() 把字符串分割为字符串数组
+3. replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。
+4. substr() 从起始索引提取字符串中指定数目的字符
+5. substring() 提取字符串中两个指定索引之间的字符
+6. indexOf() 返回某个指定的字符串值在字符串中首次出现的位置
+7. includes() 查找字符串中是否包含指定的字符串
+</code></pre></div><h2 id="什么是深拷贝、浅拷贝"><a href="#什么是深拷贝、浅拷贝" class="header-anchor">#</a> 什么是深拷贝、浅拷贝</h2> <p><strong>浅拷贝：</strong>
+如果 是基本类型，拷贝的就是基本类型的值；如果 是内存地址（引用类型），拷贝的就是内存地址 ，因此如果其中一个对象改变了，就会影响到另一个对象。</p> <p><strong>深拷贝：</strong>
+在计算机中开辟一块新的内存地址，递归方法实现深度克隆原理：遍历对象、数组直到里边都是基本数据类型，然后再去一一赋值 ，相互不影响</p> <h2 id="es6新增哪些特性"><a href="#es6新增哪些特性" class="header-anchor">#</a> es6新增哪些特性</h2> <div class="language- extra-class"><pre class="language-text"><code>1. 新增了块级作用域（let，const）
+2. 提供了定义类的语法糖（class）
+3. 新增了一种基本数据类型（Symbol）
+4. 新增了变量的解构赋值
+5. 函数参数允许设置默认值，引入了rest参数，新增了箭头函数。
+6. 数组新增了一些API，如isArray / from / of 方法；数组实例新增了 entries()，keys() 和 values() 等方法。
+7. 对象和数组新增了扩展运算符
+8. S6新增了模块化（import / export）
+9. S6新增了Set和Map数据结构。
+10. ES6原生提供Proxy构造函数，用来生成Proxy实例
+11. ES6新增了生成器（Generator）和遍历器（Iterator）
+</code></pre></div><h2 id="箭头函数和普通函数区别"><a href="#箭头函数和普通函数区别" class="header-anchor">#</a> 箭头函数和普通函数区别</h2> <div class="language- extra-class"><pre class="language-text"><code>1. 箭头函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。
+2. 箭头函数不可以当作构造函数，也就是说，不可以使用new命令，否则会抛出一个错误。
+3. 箭头函数不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用 rest 参数替。
+4. 箭头函数不可以使用yield命令，因此箭头函数不能用作 Generator 函数
+5. 箭头函数使用call()和apply()调用
+</code></pre></div><h2 id="什么是promise"><a href="#什么是promise" class="header-anchor">#</a> 什么是Promise</h2> <p>简单来说可以把promise当作一个装着异步操作结果的容器。从语法上说，Promise
+是一个对象，从它可以获取异步操作的消息。Promise 提供统一的
+API，各种异步操作都可以用同样的方法进行处理。它将异步函数以同步的方式书写，也解决了回调地狱问题</p> <h2 id="http状态码"><a href="#http状态码" class="header-anchor">#</a> HTTP状态码</h2> <div class="language- extra-class"><pre class="language-text"><code>1. 1xx表示客户端应该继续发送请求
+2. 2xx表示成功的请求
+3. 200表示OK，正常返回信息
+4. 201表示请求成功且服务器创建了新的资源
+5. 202表示服务器已经接受了请求，但还未处理
+6. 3xx表示重定向
+7. 301表示永久重定向，请求的网页已经永久移动到新位置
+8. 302表示临时重定向
+9. 304表示自从上一次请求以来，页面的内容没有改变过
+10. 4xx表示客户端错误
+11. 401表示服务器无法理解请求的格式
+12. 402表示请求未授权
+13. 403表示禁止访问
+14. 404表示请求的资源不存在，一般是路径写错了
+15. 5xx表示服务器错误
+16. 500表示最常见的服务器错误
+17. 503表示服务器暂时无法处理请求，一段时间后可能恢复正常
+</code></pre></div><h2 id="new操作符"><a href="#new操作符" class="header-anchor">#</a> new操作符</h2> <div class="language- extra-class"><pre class="language-text"><code>1. 创建一个新的对象obj
+2. 将对象与构建函数通过原型链连接起来
+3. 将构建函数中的this绑定到新建的对象obj上
+4. 根据构建函数返回类型作判断，如果是原始值则被忽略，如果是返回对象，需要正常处理
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ca482ce6.js" defer></script><script src="/assets/js/4.e4d66431.js" defer></script><script src="/assets/js/30.3d9e4bd8.js" defer></script>
+  </body>
+</html>

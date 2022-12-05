@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>自动引入Api | 斑马兽</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="斑马兽">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f93fd0e.css" as="style"><link rel="preload" href="/assets/js/app.ca482ce6.js" as="script"><link rel="preload" href="/assets/js/4.e4d66431.js" as="script"><link rel="preload" href="/assets/js/33.9172582e.js" as="script"><link rel="prefetch" href="/assets/js/10.b8426513.js"><link rel="prefetch" href="/assets/js/11.63ff5362.js"><link rel="prefetch" href="/assets/js/12.c2d1527e.js"><link rel="prefetch" href="/assets/js/13.a20f78cb.js"><link rel="prefetch" href="/assets/js/14.90f22846.js"><link rel="prefetch" href="/assets/js/15.72f816e6.js"><link rel="prefetch" href="/assets/js/16.6ee469f1.js"><link rel="prefetch" href="/assets/js/17.82d1967d.js"><link rel="prefetch" href="/assets/js/18.9ab77a24.js"><link rel="prefetch" href="/assets/js/19.55c25ae5.js"><link rel="prefetch" href="/assets/js/2.45e53b8b.js"><link rel="prefetch" href="/assets/js/20.7b871faf.js"><link rel="prefetch" href="/assets/js/21.0566bcc7.js"><link rel="prefetch" href="/assets/js/22.543e912c.js"><link rel="prefetch" href="/assets/js/23.5f6c721d.js"><link rel="prefetch" href="/assets/js/24.2000941f.js"><link rel="prefetch" href="/assets/js/25.8405abc2.js"><link rel="prefetch" href="/assets/js/26.d2e7d884.js"><link rel="prefetch" href="/assets/js/27.f615a8f0.js"><link rel="prefetch" href="/assets/js/28.8e00aede.js"><link rel="prefetch" href="/assets/js/29.e3c15d88.js"><link rel="prefetch" href="/assets/js/3.b1fe84e4.js"><link rel="prefetch" href="/assets/js/30.3d9e4bd8.js"><link rel="prefetch" href="/assets/js/31.f6ee0328.js"><link rel="prefetch" href="/assets/js/32.2d4c8c59.js"><link rel="prefetch" href="/assets/js/34.927b98da.js"><link rel="prefetch" href="/assets/js/35.81aff24e.js"><link rel="prefetch" href="/assets/js/36.807a0999.js"><link rel="prefetch" href="/assets/js/37.935ba9e8.js"><link rel="prefetch" href="/assets/js/38.19964381.js"><link rel="prefetch" href="/assets/js/5.c73eadd7.js"><link rel="prefetch" href="/assets/js/6.366812d0.js"><link rel="prefetch" href="/assets/js/7.a3e66da6.js"><link rel="prefetch" href="/assets/js/8.2a068be5.js"><link rel="prefetch" href="/assets/js/9.eef1310c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f93fd0e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">斑马兽</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习资料" class="dropdown-title"><span class="title">学习资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习资料" class="mobile-dropdown-title"><span class="title">学习资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/curriculum/html/basics/basics.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/guide/curriculum/css/basics/basics.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/vue/vue.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/guide/vuex/vuex.html" class="nav-link">
+  VUEX
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具软件" class="dropdown-title"><span class="title">工具软件</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具软件" class="mobile-dropdown-title"><span class="title">工具软件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/tool/vscode/basic.html" class="nav-link">
+  VSCODE
+</a></li></ul></div></div><div class="nav-item"><a href="/guide/bug/bug.html" class="nav-link">
+  项目经验
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试" class="dropdown-title"><span class="title">前端面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端面试" class="mobile-dropdown-title"><span class="title">前端面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/interview/html/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/css/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/js/js.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/vue/vue.html" class="nav-link">
+  VUE
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="学习资料" class="dropdown-title"><span class="title">学习资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="学习资料" class="mobile-dropdown-title"><span class="title">学习资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/curriculum/html/basics/basics.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/guide/curriculum/css/basics/basics.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/vue/vue.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/guide/vuex/vuex.html" class="nav-link">
+  VUEX
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具软件" class="dropdown-title"><span class="title">工具软件</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具软件" class="mobile-dropdown-title"><span class="title">工具软件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/tool/vscode/basic.html" class="nav-link">
+  VSCODE
+</a></li></ul></div></div><div class="nav-item"><a href="/guide/bug/bug.html" class="nav-link">
+  项目经验
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试" class="dropdown-title"><span class="title">前端面试</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端面试" class="mobile-dropdown-title"><span class="title">前端面试</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/interview/html/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/css/css.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/js/js.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/guide/interview/vue/vue.html" class="nav-link">
+  VUE
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/vue/vue.html" class="sidebar-link">vue</a></li><li><a href="/guide/vue/vue-router.html" class="sidebar-link">vue-router</a></li><li><a href="/guide/vue/vite.html" class="sidebar-link">vite</a></li><li><a href="/guide/vue/optimize_packge.html" class="sidebar-link">优化打包</a></li><li><a href="/guide/vue/plug-in.html" aria-current="page" class="active sidebar-link">插件扩展</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#自动引入api" class="sidebar-link">自动引入Api</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#安装扩展" class="sidebar-link">安装扩展</a></li><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#vite-config-ts" class="sidebar-link">vite.config.ts</a></li><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#tsconfig" class="sidebar-link">tsconfig</a></li><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#使用示例" class="sidebar-link">使用示例</a></li><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#element-plus" class="sidebar-link">element plus</a></li></ul></li><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#自动加载组件" class="sidebar-link">自动加载组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#安装配置" class="sidebar-link">安装配置</a></li><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#安装插件" class="sidebar-link">安装插件</a></li><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#vite-config-ts-2" class="sidebar-link">vite.config.ts</a></li><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#tsconfig-json" class="sidebar-link">tsconfig.json</a></li><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#组件重名" class="sidebar-link">组件重名</a></li><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#使用示例-2" class="sidebar-link">使用示例</a></li><li class="sidebar-sub-header"><a href="/guide/vue/plug-in.html#element-plus-2" class="sidebar-link">element plus</a></li></ul></li></ul></li><li><a href="/guide/vue/tsx.html" class="sidebar-link">tsx</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="自动引入api"><a href="#自动引入api" class="header-anchor">#</a> 自动引入Api</h2> <p>使用 <a href="https://github.com/antfu/unplugin-auto-import" target="_blank" rel="noopener noreferrer">unplugin-auto-import<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>可以自动导入api，不需要import。</p> <p>没有使用时</p> <div class="language- extra-class"><pre class="language-text"><code>import { ref, computed } from 'vue'
+const count = ref(0)
+const doubled = computed(() =&gt; count.value * 2)
+</code></pre></div><p>使用插件后</p> <div class="language- extra-class"><pre class="language-text"><code>const count = ref(0)
+const doubled = computed(() =&gt; count.value * 2)
+</code></pre></div><h3 id="安装扩展"><a href="#安装扩展" class="header-anchor">#</a> 安装扩展</h3> <p>首先安装扩展包</p> <div class="language- extra-class"><pre class="language-text"><code>yarn add -D unplugin-auto-import
+</code></pre></div><h3 id="vite-config-ts"><a href="#vite-config-ts" class="header-anchor">#</a> vite.config.ts</h3> <p>下面是修改vite.config.js配置文件，来增加对vue 与 vue-router的 api自动引用</p> <div class="language- extra-class"><pre class="language-text"><code>import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+import AutoImport from 'unplugin-auto-import/vite'
+
+export default defineConfig({
+  plugins: [
+    vue(),
+    AutoImport({
+      imports: ['vue', 'vue-router'],
+      //为true时在项目根目录自动创建
+      dts: 'types/auto-imports.d.ts',
+    }),
+  ]
+})
+</code></pre></div><h3 id="tsconfig"><a href="#tsconfig" class="header-anchor">#</a> tsconfig</h3> <p>接下来在 tsconfig.json中引入生成的类型声明文件，当执行 yarn dev 时会根据上面定义的 dts选项自动生成类型声明文件 types/auto-imports.d.ts</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;include&quot;: [
+  ...
+  &quot;types/**/*.ts&quot;
+]
+</code></pre></div><h3 id="使用示例"><a href="#使用示例" class="header-anchor">#</a> 使用示例</h3> <p>现在在vue组件与.ts文件中使用ref等vue的api，就不需要import了</p> <div class="language- extra-class"><pre class="language-text"><code>const user = ref('banmashou.com@斑马兽')
+</code></pre></div><h3 id="element-plus"><a href="#element-plus" class="header-anchor">#</a> element plus</h3> <p>Element plus与ant design也提示了针对该插件的支持，配置好后也不需要import api了。</p> <p>下面是element plus的vite.config.ts的配置项</p> <div class="language- extra-class"><pre class="language-text"><code>import { Plugin } from 'vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+
+export default function (plugins: Plugin[]) {
+  plugins.push(
+    AutoImport({
+    	//引入element plus自动api支持
+      resolvers: [ElementPlusResolver()],
+      imports: ['vue', 'vue-router'],
+      //为true时在项目根目录自动创建
+      dts: 'types/auto-imports.d.ts',
+    })
+  )
+}
+</code></pre></div><p>现在我们可以直接使用 element plus 的api，而不需要import进来再使用了</p> <div class="language- extra-class"><pre class="language-text"><code>ElMessage.success('banmashou.com')
+</code></pre></div><p>不过有些依赖的css会识别不到造成样式错误，建议在index.html 项目模板中引入样式</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;//unpkg.com/element-plus/dist/index.css&quot; /&gt;
+</code></pre></div><h2 id="自动加载组件"><a href="#自动加载组件" class="header-anchor">#</a> 自动加载组件</h2> <p>使用 <a href="https://github.com/antfu/unplugin-vue-components" target="_blank" rel="noopener noreferrer">unplugin-vue-components<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>可以自动按需要加载组件，我们常用的 ant design 、element plus已经基于该插件实现了按需加载。</p> <h3 id="安装配置"><a href="#安装配置" class="header-anchor">#</a> 安装配置</h3> <p>下面我们通过配置 <a href="https://github.com/antfu/unplugin-vue-components" target="_blank" rel="noopener noreferrer">unplugin-vue-components<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>插件来实现自动 import 组件，节省我们import的代码</p> <h3 id="安装插件"><a href="#安装插件" class="header-anchor">#</a> 安装插件</h3> <p>首先安装需要的扩展包</p> <div class="language- extra-class"><pre class="language-text"><code>yarn add -D unplugin-vue-components
+</code></pre></div><h3 id="vite-config-ts-2"><a href="#vite-config-ts-2" class="header-anchor">#</a> vite.config.ts</h3> <p>下面在vite中配置组件的按需自动加载</p> <div class="language- extra-class"><pre class="language-text"><code>import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+import Components from 'unplugin-vue-components/vite'
+
+export default defineConfig({
+  plugins: [
+    vue(),
+    Components({
+    	//自动加载的组件目录，默认值为 ['src/components']
+      dirs: ['src/components'],
+      //组件名称包含目录，防止同名组件冲突
+      directoryAsNamespace: true,
+      //指定类型声明文件，为true时在项目根目录创建
+      dts: 'types/components.d.ts',
+    })
+  ]
+})
+</code></pre></div><h3 id="tsconfig-json"><a href="#tsconfig-json" class="header-anchor">#</a> tsconfig.json</h3> <p>接下来在 tsconfig.json中引入生成的类型声明文件，当执行 yarn dev 时会根据上面定义的 dts选项自动生成类型声明文件 types/components.d.ts</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;include&quot;: [
+  ...
+  &quot;types/**/*.ts&quot;
+]
+</code></pre></div><h3 id="组件重名"><a href="#组件重名" class="header-anchor">#</a> 组件重名</h3> <p>插件的默认配置会加载components目录中的组件，所以当存在相同名称的组件user.vue时，会报下面的错误</p> <div class="language- extra-class"><pre class="language-text"><code>[unplugin-vue-components] component &quot;User&quot;(xxxxx/user.vue) has naming conflicts with other components, ignored.
+</code></pre></div><p>我们可以声明组件的注册名称包含目录，这样组件包含目录前缀来避免组件重名</p> <div class="language- extra-class"><pre class="language-text"><code>Components({
+  resolvers: [ElementPlusResolver()],
+  directoryAsNamespace: true,
+  dts: true,
+})
+</code></pre></div><h3 id="使用示例-2"><a href="#使用示例-2" class="header-anchor">#</a> 使用示例</h3> <p>运行 yarn dev 命令后，我们现在可以在组件中直接使用 src/components中的组件，而不需要import引入组件了。</p> <p>因为定义了 <code>directoryAsNamespace</code> 选项，所以实际使用的组件名称前要加上目录名，vscode也会自动根据TS类型进行提示的</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;WangEditorEditor/&gt;
+</code></pre></div><h3 id="element-plus-2"><a href="#element-plus-2" class="header-anchor">#</a> element plus</h3> <p>Element plus与ant design也提示了针对该插件的支持，配置好后也不需要import 组件了。</p> <p>下面是element plus的vite.config.ts的配置项</p> <div class="language- extra-class"><pre class="language-text"><code>import { Plugin } from 'vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+
+export default function (plugins: Plugin[]) {
+  plugins.push(
+    Components({
+      dirs: ['src/components'],
+      directoryAsNamespace: true,
+      //为true时在项目根目录自动创建
+      dts: 'types/components.d.ts',
+      //引入element plus自动组件支持
+      resolvers: [ElementPlusResolver()],
+    })
+  )
+}
+</code></pre></div><p>现在我们可以直接使用 element plus 的组件了，而不需要import进来再使用了</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;el-button type=&quot;primary&quot; size=&quot;default&quot;&gt;houdunren.com&lt;/el-button&gt;
+</code></pre></div><p>有些依赖的css会识别不到造成样式错误，建议在index.html 项目模板中引入样式</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;//unpkg.com/element-plus/dist/index.css&quot; /&gt;
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/vue/optimize_packge.html" class="prev">
+        优化打包
+      </a></span> <span class="next"><a href="/guide/vue/tsx.html">
+        tsx
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ca482ce6.js" defer></script><script src="/assets/js/4.e4d66431.js" defer></script><script src="/assets/js/33.9172582e.js" defer></script>
+  </body>
+</html>
